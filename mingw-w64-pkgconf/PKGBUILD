@@ -4,7 +4,7 @@ _realname=pkgconf
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
 epoch=1
-pkgver=478199b
+pkgver=478199b425b46e9dae36bb174f1bd08bf3ffb0f1
 pkgrel=1
 pkgdesc='pkg-config compatible utility which does not depend on glib'
 url='https://github.com/pkgconf/pkgconf'
@@ -26,7 +26,6 @@ sha256sums=('10dddb20625360bf0e8dd3f1b7d9eab0659572bf6ec6fa8a90de180a427b309b'
             '93a4aa1475122d16b6ac8a84f771e004e1a53e1df982d3dd069b262c9815ebb4')
 
 prepare() {
-  mv "478199b425b46e9dae36bb174f1bd08bf3ffb0f1" "${_realname}-${pkgver}"
   cd ${srcdir}/$_realname-$pkgver
 
   # https://github.com/msys2/MINGW-packages/issues/8473
